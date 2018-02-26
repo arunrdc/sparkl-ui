@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="wrapper wrapper-content">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ibox float-e-margins">
+            <div class="ibox-title">
+      <h5>Fashion Jewellery</h5>
+      <div class="ibox-tools">
+        <span class="label label-warning-light pull-right">10 Messages</span>
+      </div>
+            </div>
+
+
+    </div>
+    <div class="ibox-content">
+
+      <div>
+        <div class="feed-activity-list">
+        
+          <label>Title:
+            <input [(ngModel)]="item.itemName" >
+          </label>
+            <label>Description:
+              <input [(ngModel)]="item.itemDescription" >
+          </label>
+
+        <button class="btn btn-primary" (click)="onPost()"><i class="fa fa-arrow-down"></i> Post</button>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="ibox-content">
+
+    <div>
+      <div class="feed-activity-list">
+      
+        <div class="feed-element" *ngFor="let item of items">
+          <a href="profile.html" class="pull-left">
+            <img alt="image" class="img-circle" src="assets/images/profile.jpg">
+          </a>
+          <div class="media-body ">
+            <small class="pull-right">5m ago</small>
+            <strong>{{item.userName}}</strong> posted a item. <br>
+            <strong>{{item.itemName}}  </strong>   {{item.itemDescription}}<br>
+            <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+
+          </div>
+        </div>
+
+
+
+      <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i> Show More</button>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
